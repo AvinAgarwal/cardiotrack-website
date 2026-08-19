@@ -106,6 +106,14 @@
   .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
   .hero .price-note{margin-top:14px;font-size:.9rem;color:var(--muted)}
   .hero-img{aspect-ratio:4/3}
+  .shot{width:100%;display:block;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line)}
+  .hero-shot{aspect-ratio:4/3;object-fit:cover}
+  .dd-shot{aspect-ratio:4/3;object-fit:cover;margin-bottom:12px}
+  .reach-img{margin-top:30px;border-radius:var(--radius);overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.28)}.reach-img img{width:100%;display:block}
+  .p-letters{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:26px}@media(max-width:820px){.p-letters{grid-template-columns:repeat(2,1fr)}}
+  .p-letters figure{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+  .p-letters img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;object-position:top}
+  .p-letters figcaption{font-size:.76rem;color:#456;padding:7px 8px;text-align:center;font-weight:700}
   .statbar{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
   @media(max-width:680px){.statbar{grid-template-columns:1fr}}
   .stat{
@@ -261,7 +269,7 @@
         </div>
         <p class="price-note" data-en="Free to apply. Our team calls you back to explain how it works." data-hi="आवेदन मुफ़्त है। हमारी टीम आपको कॉल करके पूरा तरीका समझाती है।">Free to apply. Our team calls you back to explain how it works.</p>
       </div>
-      <div class="ph hero-img">IMAGE SLOT<br>Lab owner or technician using the device (add photo)</div>
+      <img class="shot hero-shot" src="technician.jpg" alt="A technician with the Cardiotrack 12 lead ECG device">
     </div>
     <div class="statbar">
       <div class="stat"><b>3,000+</b><span data-en="Real cases handled" data-hi="असली केस पूरे किए">Real cases handled</span></div>
@@ -315,7 +323,6 @@
             <li data-en="All cases on one screen" data-hi="सारे केस एक स्क्रीन पर">All cases on one screen</li>
             <li data-en="Case level chat" data-hi="हर केस पर चैट">Case level chat</li>
           </ul>
-          <div class="ph ben-visual">IMAGE SLOT&nbsp;&nbsp;App screenshot with the lab's own logo (add later)</div>
         </div>
       </div>
     </div>
@@ -348,8 +355,8 @@
         <p data-en="We have run pre policy medical examinations for leading life and health insurers for years. Insurer specific forms are replicated digitally, every case is tracked end to end, and each report is signed and audit ready. That trusted workflow is what lets cases flow to partner labs like yours." data-hi="हमने कई प्रमुख जीवन और स्वास्थ्य बीमा कंपनियों के लिए वर्षों तक प्री पॉलिसी मेडिकल जाँच की है। हर बीमा कंपनी के फॉर्म डिजिटल रूप में बनते हैं, हर केस शुरू से आखिर तक ट्रैक होता है, और हर रिपोर्ट साइन की हुई और ऑडिट के लिए तैयार होती है। यही भरोसेमंद सिस्टम पार्टनर लैब तक केस पहुँचाता है।">We have run pre policy medical examinations for leading life and health insurers for years. Insurer specific forms are replicated digitally, every case is tracked end to end, and each report is signed and audit ready. That trusted workflow is what lets cases flow to partner labs like yours.</p>
       </div>
       <div class="dd-card media">
-        <div class="ph">IMAGE SLOT&nbsp;&nbsp;Safe operations visual, not insurer logos (add later)</div>
-        <p class="dd-cap" data-en="Insurance operations, handled end to end" data-hi="बीमा ऑपरेशन, शुरू से आखिर तक">Insurance operations, handled end to end</p>
+        <img class="shot dd-shot" src="signed_report.jpg" alt="A physician signed 12 lead ECG report">
+        <p class="dd-cap" data-en="Every report signed and audit ready" data-hi="हर रिपोर्ट साइन और ऑडिट के लिए तैयार">Every report signed and audit ready</p>
       </div>
       <figure class="dd-card media">
         <div class="ph vidph"><div class="play">▶</div>VIDEO SLOT&nbsp;&nbsp;Insurance case flow (add later)</div>
@@ -372,7 +379,7 @@
         <a href="/ecg-device" style="display:inline-block;margin-top:12px;color:var(--teal-dark);font-weight:700;font-size:.92rem;text-decoration:none" data-en="See full device details →" data-hi="पूरी डिवाइस जानकारी देखें →">See full device details →</a>
       </div>
       <div class="dd-card media">
-        <div class="ph">IMAGE SLOT&nbsp;&nbsp;Device product shot (add later)</div>
+        <img class="shot dd-shot" src="device_clean.jpg" alt="The Cardiotrack 12 lead ECG device">
         <p class="dd-cap" data-en="The Cardiotrack 12 lead ECG kit" data-hi="Cardiotrack 12 लीड ईसीजी किट">The Cardiotrack 12 lead ECG kit</p>
       </div>
       <figure class="dd-card media">
@@ -395,7 +402,7 @@
         <p data-en="Your branded app puts every case on one screen. Track status, assign work to technicians, chat on each case, and see turnaround at a glance. Your lab logo and name sit on the app and on the online reports your customers receive." data-hi="आपका ब्रांडेड ऐप हर केस को एक ही स्क्रीन पर लाता है। स्टेटस ट्रैक कीजिए, टेक्नीशियन को काम बाँटिए, हर केस पर चैट कीजिए, और टर्नअराउंड एक नज़र में देखिए। आपकी लैब का लोगो और नाम ऐप पर और ग्राहकों को मिलने वाली ऑनलाइन रिपोर्ट पर रहता है।">Your branded app puts every case on one screen. Track status, assign work to technicians, chat on each case, and see turnaround at a glance. Your lab logo and name sit on the app and on the online reports your customers receive.</p>
       </div>
       <div class="dd-card media">
-        <div class="ph">IMAGE SLOT&nbsp;&nbsp;App screenshot with the lab's own logo (add later)</div>
+        <img class="shot dd-shot" src="device_app_banner.jpg" alt="The Cardiotrack app showing a live 12 lead ECG on a phone">
         <p class="dd-cap" data-en="Your cases, your branding" data-hi="आपके केस, आपकी ब्रांडिंग">Your cases, your branding</p>
       </div>
       <figure class="dd-card media">
@@ -461,8 +468,15 @@
       </div>
     </div>
     <p class="recog" data-en="Recognised by CNBC Young Turks, the WHO Compendium of Innovative Health Technologies, and Karnataka Government health initiatives." data-hi="CNBC Young Turks, WHO Compendium of Innovative Health Technologies, और कर्नाटक सरकार की स्वास्थ्य पहलों द्वारा पहचाना गया।">Recognised by CNBC Young Turks, the WHO Compendium of Innovative Health Technologies, and Karnataka Government health initiatives.</p>
-    <div class="proof-strip">
-      <div class="ph">IMAGE SLOT&nbsp;&nbsp;Partner lab photos, health camp shots or certification badges (add later)</div>
+    <div class="reach-img"><img src="deploy_map.jpg" alt="Cardiotrack deployed across 16 countries and six continents"></div>
+    <div class="reach-img" style="margin-top:18px"><img src="health_camp.jpg" alt="Cardiotrack in use at a health camp"></div>
+    <p class="recog" data-en="Recommendation letters from Fortis Hospital, the Government of Karnataka and practising physicians." data-hi="Fortis Hospital, कर्नाटक सरकार और प्रैक्टिस करने वाले डॉक्टरों के सिफारिश पत्र।">Recommendation letters from Fortis Hospital, the Government of Karnataka and practising physicians.</p>
+    <div class="p-letters">
+      <figure><img src="letter_fortis.jpg" alt="Fortis Hospital recommendation letter"><figcaption>Fortis Hospital</figcaption></figure>
+      <figure><img src="letter_karnataka.jpg" alt="Government of Karnataka recommendation"><figcaption>Govt. of Karnataka</figcaption></figure>
+      <figure><img src="letter_rajeev.jpg" alt="Dr Rajeev H recommendation letter"><figcaption>Dr Rajeev H</figcaption></figure>
+      <figure><img src="letter_maruthy.jpg" alt="Dr Maruthy recommendation letter"><figcaption>Dr Maruthy</figcaption></figure>
+      <figure><img src="letter_chandrashekhar.jpg" alt="Dr Chandrashekhar recommendation letter"><figcaption>Dr Chandrashekhar</figcaption></figure>
     </div>
   </div>
 </section>
