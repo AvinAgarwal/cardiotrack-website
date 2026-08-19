@@ -106,6 +106,15 @@
   .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
   .hero .price-note{margin-top:14px;font-size:.9rem;color:var(--muted)}
   .hero-img{aspect-ratio:4/3}
+  /* Hero value panel (replaces photo) */
+  .hero-panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 26px;box-shadow:0 20px 46px rgba(20,38,63,.10)}
+  .hp-title{font-family:'Fraunces',serif;color:var(--navy);font-size:1.12rem;font-weight:700;margin-bottom:18px}
+  html[lang="hi"] .hp-title{font-family:'Noto Sans Devanagari',sans-serif}
+  .hp-row{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line)}
+  .hp-row:first-of-type{border-top:none;padding-top:4px}
+  .hp-ico{flex-shrink:0;width:42px;height:42px;border-radius:11px;background:var(--teal-tint);display:flex;align-items:center;justify-content:center;font-size:1.25rem}
+  .hp-row b{display:block;color:var(--ink);font-size:1rem;margin-bottom:2px}
+  .hp-row span{display:block;color:var(--muted);font-size:.9rem;line-height:1.45}
   .statbar{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
   @media(max-width:680px){.statbar{grid-template-columns:1fr}}
   .stat{
@@ -261,7 +270,12 @@
         </div>
         <p class="price-note" data-en="Free to apply. Our team calls you back to explain how it works." data-hi="आवेदन मुफ़्त है। हमारी टीम आपको कॉल करके पूरा तरीका समझाती है।">Free to apply. Our team calls you back to explain how it works.</p>
       </div>
-      <div class="ph hero-img">IMAGE SLOT<br>Lab owner or technician using the device (add photo)</div>
+      <div class="hero-panel">
+        <div class="hp-title" data-en="One partnership, three ways to earn" data-hi="एक पार्टनरशिप, कमाई के तीन रास्ते">One partnership, three ways to earn</div>
+        <div class="hp-row"><span class="hp-ico">🛡</span><div><b data-en="Insurance checkup cases" data-hi="बीमा चेकअप केस">Insurance checkup cases</b><span data-en="Routed to your lab. No cold calling." data-hi="सीधे आपकी लैब को। कोई कोल्ड कॉलिंग नहीं।">Routed to your lab. No cold calling.</span></div></div>
+        <div class="hp-row"><span class="hp-ico">❤️</span><div><b data-en="Cardiac device at partner price" data-hi="पार्टनर कीमत पर कार्डिएक डिवाइस">Cardiac device at partner price</b><span data-en="12 lead ECG, physician signed reports." data-hi="12 लीड ईसीजी, डॉक्टर से साइन रिपोर्ट।">12 lead ECG, physician signed reports.</span></div></div>
+        <div class="hp-row"><span class="hp-ico">📱</span><div><b data-en="Your own branded lab app" data-hi="आपका अपना ब्रांडेड लैब ऐप">Your own branded lab app</b><span data-en="Every case on one screen, with your logo." data-hi="हर केस एक स्क्रीन पर, आपके लोगो के साथ।">Every case on one screen, with your logo.</span></div></div>
+      </div>
     </div>
     <div class="statbar">
       <div class="stat"><b>3,000+</b><span data-en="Real cases handled" data-hi="असली केस पूरे किए">Real cases handled</span></div>
@@ -315,23 +329,8 @@
             <li data-en="All cases on one screen" data-hi="सारे केस एक स्क्रीन पर">All cases on one screen</li>
             <li data-en="Case level chat" data-hi="हर केस पर चैट">Case level chat</li>
           </ul>
-          <div class="ph ben-visual">IMAGE SLOT&nbsp;&nbsp;App screenshot with the lab's own logo (add later)</div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= SAMPLE ECONOMICS (PLACEHOLDER, REPLACE BEFORE PUBLISHING) ================= -->
-<section class="econ">
-  <div class="wrap center">
-    <span class="econ-note" data-en="Sample numbers, replace before publishing" data-hi="नमूना आँकड़े, प्रकाशित करने से पहले बदलें">Sample numbers, replace before publishing</span>
-    <h2 data-en="What a partner lab can earn." data-hi="एक पार्टनर लैब कितना कमा सकती है।">What a partner lab can earn.</h2>
-    <p class="sub" data-en="These figures are placeholders to show the layout. We will put your real, approved numbers here before this page goes live." data-hi="ये आँकड़े सिर्फ़ लेआउट दिखाने के लिए हैं। पेज लाइव होने से पहले यहाँ आपके असली, मंज़ूर किए गए आँकड़े लगेंगे।">These figures are placeholders to show the layout. We will put your real, approved numbers here before this page goes live.</p>
-    <div class="econ-grid">
-      <div class="econ-tile"><b>₹350</b><span data-en="Sample earning per checkup case" data-hi="प्रति चेकअप केस नमूना कमाई">Sample earning per checkup case</span></div>
-      <div class="econ-tile"><b data-en="40+ / month" data-hi="40+ / महीना">40+ / month</b><span data-en="Sample cases in an active area" data-hi="सक्रिय इलाके में नमूना केस">Sample cases in an active area</span></div>
-      <div class="econ-tile"><b data-en="₹14,000" data-hi="₹14,000">₹14,000</b><span data-en="Sample extra income per month" data-hi="प्रति महीना नमूना अतिरिक्त आय">Sample extra income per month</span></div>
     </div>
   </div>
 </section>
@@ -347,14 +346,16 @@
         <h3 data-en="Years of insurance experience" data-hi="बीमा का वर्षों का अनुभव">Years of insurance experience</h3>
         <p data-en="We have run pre policy medical examinations for leading life and health insurers for years. Insurer specific forms are replicated digitally, every case is tracked end to end, and each report is signed and audit ready. That trusted workflow is what lets cases flow to partner labs like yours." data-hi="हमने कई प्रमुख जीवन और स्वास्थ्य बीमा कंपनियों के लिए वर्षों तक प्री पॉलिसी मेडिकल जाँच की है। हर बीमा कंपनी के फॉर्म डिजिटल रूप में बनते हैं, हर केस शुरू से आखिर तक ट्रैक होता है, और हर रिपोर्ट साइन की हुई और ऑडिट के लिए तैयार होती है। यही भरोसेमंद सिस्टम पार्टनर लैब तक केस पहुँचाता है।">We have run pre policy medical examinations for leading life and health insurers for years. Insurer specific forms are replicated digitally, every case is tracked end to end, and each report is signed and audit ready. That trusted workflow is what lets cases flow to partner labs like yours.</p>
       </div>
-      <div class="dd-card media">
-        <div class="ph">IMAGE SLOT&nbsp;&nbsp;Safe operations visual, not insurer logos (add later)</div>
-        <p class="dd-cap" data-en="Insurance operations, handled end to end" data-hi="बीमा ऑपरेशन, शुरू से आखिर तक">Insurance operations, handled end to end</p>
+      <div class="dd-card">
+        <div class="ico">📋</div>
+        <h3 data-en="An insurer ready workflow" data-hi="बीमा के लिए तैयार वर्कफ़्लो">An insurer ready workflow</h3>
+        <p data-en="Insurer specific forms are replicated digitally, every case is tracked end to end, and every report is signed and audit ready. That is what makes insurers comfortable routing cases to partner labs." data-hi="हर बीमा कंपनी के फॉर्म डिजिटल रूप में बनते हैं, हर केस शुरू से आखिर तक ट्रैक होता है, और हर रिपोर्ट साइन की हुई और ऑडिट के लिए तैयार होती है। इसी वजह से बीमा कंपनियाँ पार्टनर लैब को केस भेजने में सहज रहती हैं।">Insurer specific forms are replicated digitally, every case is tracked end to end, and every report is signed and audit ready. That is what makes insurers comfortable routing cases to partner labs.</p>
       </div>
-      <figure class="dd-card media">
-        <div class="ph vidph"><div class="play">▶</div>VIDEO SLOT&nbsp;&nbsp;Insurance case flow (add later)</div>
-        <p class="dd-cap" data-en="How insurance cases reach your lab" data-hi="बीमा केस आपकी लैब तक कैसे पहुँचते हैं">How insurance cases reach your lab</p>
-      </figure>
+      <div class="dd-card">
+        <div class="ico">📍</div>
+        <h3 data-en="Cases routed to your area" data-hi="आपके इलाके में आने वाले केस">Cases routed to your area</h3>
+        <p data-en="When a pre policy checkup comes up near you, it can flow straight to your lab through our platform. You do the checkup, and the report goes back on its own. New footfall you did not have to chase." data-hi="जब आपके पास कोई प्री पॉलिसी चेकअप आता है, तो वह हमारे प्लेटफॉर्म से सीधे आपकी लैब को मिल सकता है। आप चेकअप करते हैं, और रिपोर्ट अपने आप वापस चली जाती है। नई फुटफॉल, बिना भागदौड़ के।">When a pre policy checkup comes up near you, it can flow straight to your lab through our platform. You do the checkup, and the report goes back on its own. New footfall you did not have to chase.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -371,14 +372,16 @@
         <p data-en="A handheld 12 lead ECG that records all leads at once, uploads over Bluetooth, and returns a physician signed AI report in minutes. It also reads pulse oximetry and blood pressure, and runs on a rechargeable battery." data-hi="एक हैंडहेल्ड 12 लीड ईसीजी जो सभी लीड एक साथ रिकॉर्ड करता है, ब्लूटूथ से अपलोड करता है, और कुछ ही मिनटों में डॉक्टर से साइन की हुई एआई रिपोर्ट देता है। यह पल्स ऑक्सीमेट्री और ब्लड प्रेशर भी पढ़ता है, और रिचार्जेबल बैटरी पर चलता है।">A handheld 12 lead ECG that records all leads at once, uploads over Bluetooth, and returns a physician signed AI report in minutes. It also reads pulse oximetry and blood pressure, and runs on a rechargeable battery.</p>
         <a href="/ecg-device" style="display:inline-block;margin-top:12px;color:var(--teal-dark);font-weight:700;font-size:.92rem;text-decoration:none" data-en="See full device details →" data-hi="पूरी डिवाइस जानकारी देखें →">See full device details →</a>
       </div>
-      <div class="dd-card media">
-        <div class="ph">IMAGE SLOT&nbsp;&nbsp;Device product shot (add later)</div>
-        <p class="dd-cap" data-en="The Cardiotrack 12 lead ECG kit" data-hi="Cardiotrack 12 लीड ईसीजी किट">The Cardiotrack 12 lead ECG kit</p>
+      <div class="dd-card">
+        <div class="ico">📈</div>
+        <h3 data-en="12 leads, one tap" data-hi="12 लीड, एक टैप">12 leads, one tap</h3>
+        <p data-en="It records all 12 leads at once, uploads over Bluetooth, and returns a physician signed AI report in under a minute. A trained technician can run it, no cardiologist on site." data-hi="यह सभी 12 लीड एक साथ रिकॉर्ड करता है, ब्लूटूथ से अपलोड करता है, और एक मिनट से कम में डॉक्टर से साइन की हुई एआई रिपोर्ट देता है। एक ट्रेंड टेक्नीशियन इसे चला सकता है, साइट पर कार्डियोलॉजिस्ट की ज़रूरत नहीं।">It records all 12 leads at once, uploads over Bluetooth, and returns a physician signed AI report in under a minute. A trained technician can run it, no cardiologist on site.</p>
       </div>
-      <figure class="dd-card media">
-        <div class="ph vidph"><div class="play">▶</div>VIDEO SLOT&nbsp;&nbsp;Device demo (add later)</div>
-        <p class="dd-cap" data-en="Watch a 2 minute device demo" data-hi="2 मिनट का डिवाइस डेमो देखें">Watch a 2 minute device demo</p>
-      </figure>
+      <div class="dd-card">
+        <div class="ico">🔋</div>
+        <h3 data-en="Handheld and portable" data-hi="हैंडहेल्ड और पोर्टेबल">Handheld and portable</h3>
+        <p data-en="It also reads pulse oximetry and blood pressure, and runs on a rechargeable battery. So it works at your lab, at home visits, and at health camps too." data-hi="यह पल्स ऑक्सीमेट्री और ब्लड प्रेशर भी पढ़ता है, और रिचार्जेबल बैटरी पर चलता है। इसलिए यह आपकी लैब में, घर की विज़िट में, और हेल्थ कैंप में भी काम करता है।">It also reads pulse oximetry and blood pressure, and runs on a rechargeable battery. So it works at your lab, at home visits, and at health camps too.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -394,14 +397,16 @@
         <h3 data-en="What it does" data-hi="यह क्या करता है">What it does</h3>
         <p data-en="Your branded app puts every case on one screen. Track status, assign work to technicians, chat on each case, and see turnaround at a glance. Your lab logo and name sit on the app and on the online reports your customers receive." data-hi="आपका ब्रांडेड ऐप हर केस को एक ही स्क्रीन पर लाता है। स्टेटस ट्रैक कीजिए, टेक्नीशियन को काम बाँटिए, हर केस पर चैट कीजिए, और टर्नअराउंड एक नज़र में देखिए। आपकी लैब का लोगो और नाम ऐप पर और ग्राहकों को मिलने वाली ऑनलाइन रिपोर्ट पर रहता है।">Your branded app puts every case on one screen. Track status, assign work to technicians, chat on each case, and see turnaround at a glance. Your lab logo and name sit on the app and on the online reports your customers receive.</p>
       </div>
-      <div class="dd-card media">
-        <div class="ph">IMAGE SLOT&nbsp;&nbsp;App screenshot with the lab's own logo (add later)</div>
-        <p class="dd-cap" data-en="Your cases, your branding" data-hi="आपके केस, आपकी ब्रांडिंग">Your cases, your branding</p>
+      <div class="dd-card">
+        <div class="ico">🗂</div>
+        <h3 data-en="Every case on one screen" data-hi="हर केस एक स्क्रीन पर">Every case on one screen</h3>
+        <p data-en="Track status, assign work to your technicians, chat on each case, and see turnaround at a glance. Your whole home screening operation runs from one place." data-hi="स्टेटस ट्रैक कीजिए, अपने टेक्नीशियन को काम बाँटिए, हर केस पर चैट कीजिए, और टर्नअराउंड एक नज़र में देखिए। आपकी पूरी होम स्क्रीनिंग एक ही जगह से चलती है।">Track status, assign work to your technicians, chat on each case, and see turnaround at a glance. Your whole home screening operation runs from one place.</p>
       </div>
-      <figure class="dd-card media">
-        <div class="ph vidph"><div class="play">▶</div>VIDEO SLOT&nbsp;&nbsp;App walkthrough (add later)</div>
-        <p class="dd-cap" data-en="See the app in action" data-hi="ऐप को चलते हुए देखें">See the app in action</p>
-      </figure>
+      <div class="dd-card">
+        <div class="ico">🏷</div>
+        <h3 data-en="Your brand, not ours" data-hi="आपका ब्रांड, हमारा नहीं">Your brand, not ours</h3>
+        <p data-en="Your lab logo and name sit on the app and on the online reports your customers receive. To them it is your service, start to finish." data-hi="आपकी लैब का लोगो और नाम ऐप पर और ग्राहकों को मिलने वाली ऑनलाइन रिपोर्ट पर रहता है। उनके लिए यह शुरू से आखिर तक आपकी सेवा है।">Your lab logo and name sit on the app and on the online reports your customers receive. To them it is your service, start to finish.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -461,9 +466,7 @@
       </div>
     </div>
     <p class="recog" data-en="Recognised by CNBC Young Turks, the WHO Compendium of Innovative Health Technologies, and Karnataka Government health initiatives." data-hi="CNBC Young Turks, WHO Compendium of Innovative Health Technologies, और कर्नाटक सरकार की स्वास्थ्य पहलों द्वारा पहचाना गया।">Recognised by CNBC Young Turks, the WHO Compendium of Innovative Health Technologies, and Karnataka Government health initiatives.</p>
-    <div class="proof-strip">
-      <div class="ph">IMAGE SLOT&nbsp;&nbsp;Partner lab photos, health camp shots or certification badges (add later)</div>
-    </div>
+    <p class="recog" style="margin-top:12px;font-weight:600;color:var(--navy)" data-en="Insurance partners include Tata AIA, Bajaj Life, Ageas Federal Life, Canara HSBC Life and SUD Life." data-hi="बीमा पार्टनर में Tata AIA, Bajaj Life, Ageas Federal Life, Canara HSBC Life और SUD Life शामिल हैं।">Insurance partners include Tata AIA, Bajaj Life, Ageas Federal Life, Canara HSBC Life and SUD Life.</p>
   </div>
 </section>
 
