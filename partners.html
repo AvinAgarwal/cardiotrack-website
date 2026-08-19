@@ -114,6 +114,12 @@
   .p-letters figure{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.25)}
   .p-letters img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;object-position:top}
   .p-letters figcaption{font-size:.76rem;color:#456;padding:7px 8px;text-align:center;font-weight:700}
+  .who-note{max-width:800px;margin:26px auto 0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-left:4px solid var(--teal);border-radius:10px;padding:16px 22px;font-size:1rem;color:#EAF2F8;text-align:center;font-weight:700}
+  .p-testi{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px;text-align:left}@media(max-width:720px){.p-testi{grid-template-columns:1fr}}
+  .pt-card{background:#fff;border-radius:14px;padding:26px 24px;box-shadow:0 12px 28px rgba(0,0,0,.28)}
+  .pt-card .qm{font-family:'Fraunces',serif;font-size:2.6rem;line-height:.5;color:var(--teal);opacity:.45}
+  .pt-card blockquote{font-size:.98rem;color:var(--ink);margin:6px 0 14px;line-height:1.55}
+  .pt-card cite{font-style:normal;font-weight:800;color:var(--navy);font-size:.9rem;display:block}
   .statbar{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
   @media(max-width:680px){.statbar{grid-template-columns:1fr}}
   .stat{
@@ -355,8 +361,8 @@
         <p data-en="We have run pre policy medical examinations for leading life and health insurers for years. Insurer specific forms are replicated digitally, every case is tracked end to end, and each report is signed and audit ready. That trusted workflow is what lets cases flow to partner labs like yours." data-hi="हमने कई प्रमुख जीवन और स्वास्थ्य बीमा कंपनियों के लिए वर्षों तक प्री पॉलिसी मेडिकल जाँच की है। हर बीमा कंपनी के फॉर्म डिजिटल रूप में बनते हैं, हर केस शुरू से आखिर तक ट्रैक होता है, और हर रिपोर्ट साइन की हुई और ऑडिट के लिए तैयार होती है। यही भरोसेमंद सिस्टम पार्टनर लैब तक केस पहुँचाता है।">We have run pre policy medical examinations for leading life and health insurers for years. Insurer specific forms are replicated digitally, every case is tracked end to end, and each report is signed and audit ready. That trusted workflow is what lets cases flow to partner labs like yours.</p>
       </div>
       <div class="dd-card media">
-        <img class="shot dd-shot" src="signed_report.jpg" alt="A physician signed 12 lead ECG report">
-        <p class="dd-cap" data-en="Every report signed and audit ready" data-hi="हर रिपोर्ट साइन और ऑडिट के लिए तैयार">Every report signed and audit ready</p>
+        <img class="shot dd-shot" src="ct_doc.jpg" alt="A physician reviewing a Cardiotrack ECG report">
+        <p class="dd-cap" data-en="A physician reviews and signs every case" data-hi="हर केस को डॉक्टर देखकर साइन करता है">A physician reviews and signs every case</p>
       </div>
       <figure class="dd-card media">
         <div class="ph vidph"><div class="play">▶</div>VIDEO SLOT&nbsp;&nbsp;Insurance case flow (add later)</div>
@@ -379,7 +385,7 @@
         <a href="/ecg-device" style="display:inline-block;margin-top:12px;color:var(--teal-dark);font-weight:700;font-size:.92rem;text-decoration:none" data-en="See full device details →" data-hi="पूरी डिवाइस जानकारी देखें →">See full device details →</a>
       </div>
       <div class="dd-card media">
-        <img class="shot dd-shot" src="device_clean.jpg" alt="The Cardiotrack 12 lead ECG device">
+        <img class="shot dd-shot" src="device_kit.jpg" alt="The full Cardiotrack 12 lead ECG kit with phone and accessories">
         <p class="dd-cap" data-en="The Cardiotrack 12 lead ECG kit" data-hi="Cardiotrack 12 लीड ईसीजी किट">The Cardiotrack 12 lead ECG kit</p>
       </div>
       <figure class="dd-card media">
@@ -402,7 +408,7 @@
         <p data-en="Your branded app puts every case on one screen. Track status, assign work to technicians, chat on each case, and see turnaround at a glance. Your lab logo and name sit on the app and on the online reports your customers receive." data-hi="आपका ब्रांडेड ऐप हर केस को एक ही स्क्रीन पर लाता है। स्टेटस ट्रैक कीजिए, टेक्नीशियन को काम बाँटिए, हर केस पर चैट कीजिए, और टर्नअराउंड एक नज़र में देखिए। आपकी लैब का लोगो और नाम ऐप पर और ग्राहकों को मिलने वाली ऑनलाइन रिपोर्ट पर रहता है।">Your branded app puts every case on one screen. Track status, assign work to technicians, chat on each case, and see turnaround at a glance. Your lab logo and name sit on the app and on the online reports your customers receive.</p>
       </div>
       <div class="dd-card media">
-        <img class="shot dd-shot" src="device_app_banner.jpg" alt="The Cardiotrack app showing a live 12 lead ECG on a phone">
+        <img class="shot dd-shot" src="platform_app.jpg" alt="The Cardiotrack lab platform and app with a live ECG">
         <p class="dd-cap" data-en="Your cases, your branding" data-hi="आपके केस, आपकी ब्रांडिंग">Your cases, your branding</p>
       </div>
       <figure class="dd-card media">
@@ -468,15 +474,10 @@
       </div>
     </div>
     <p class="recog" data-en="Recognised by CNBC Young Turks, the WHO Compendium of Innovative Health Technologies, and Karnataka Government health initiatives." data-hi="CNBC Young Turks, WHO Compendium of Innovative Health Technologies, और कर्नाटक सरकार की स्वास्थ्य पहलों द्वारा पहचाना गया।">Recognised by CNBC Young Turks, the WHO Compendium of Innovative Health Technologies, and Karnataka Government health initiatives.</p>
-    <div class="reach-img"><img src="deploy_map.jpg" alt="Cardiotrack deployed across 16 countries and six continents"></div>
-    <div class="reach-img" style="margin-top:18px"><img src="health_camp.jpg" alt="Cardiotrack in use at a health camp"></div>
-    <p class="recog" data-en="Recommendation letters from Fortis Hospital, the Government of Karnataka and practising physicians." data-hi="Fortis Hospital, कर्नाटक सरकार और प्रैक्टिस करने वाले डॉक्टरों के सिफारिश पत्र।">Recommendation letters from Fortis Hospital, the Government of Karnataka and practising physicians.</p>
-    <div class="p-letters">
-      <figure><img src="letter_fortis.jpg" alt="Fortis Hospital recommendation letter"><figcaption>Fortis Hospital</figcaption></figure>
-      <figure><img src="letter_karnataka.jpg" alt="Government of Karnataka recommendation"><figcaption>Govt. of Karnataka</figcaption></figure>
-      <figure><img src="letter_rajeev.jpg" alt="Dr Rajeev H recommendation letter"><figcaption>Dr Rajeev H</figcaption></figure>
-      <figure><img src="letter_maruthy.jpg" alt="Dr Maruthy recommendation letter"><figcaption>Dr Maruthy</figcaption></figure>
-      <figure><img src="letter_chandrashekhar.jpg" alt="Dr Chandrashekhar recommendation letter"><figcaption>Dr Chandrashekhar</figcaption></figure>
+    <div class="who-note" data-en="Listed in the WHO Compendium of Innovative Health Technologies for low resource settings." data-hi="कम संसाधन वाली सेटिंग्स के लिए WHO Compendium of Innovative Health Technologies में सूचीबद्ध।">Listed in the WHO Compendium of Innovative Health Technologies for low resource settings.</div>
+    <div class="p-testi">
+      <div class="pt-card"><div class="qm">&ldquo;</div><blockquote data-en="The Cardiotrack ECG is very useful in general practice for quick diagnosis. It is easy to operate and read, and it helps save patients' lives." data-hi="Cardiotrack ECG सामान्य प्रैक्टिस में जल्दी निदान के लिए बहुत उपयोगी है। इसे चलाना और पढ़ना आसान है, और यह मरीज़ों की जान बचाने में मदद करता है।">The Cardiotrack ECG is very useful in general practice for quick diagnosis. It is easy to operate and read, and it helps save patients' lives.</blockquote><cite data-en="Dr Chandrashekhar, Gurukrupa Clinic, Hubli" data-hi="डॉ. चंद्रशेखर, गुरुकृपा क्लिनिक, हुबली">Dr Chandrashekhar, Gurukrupa Clinic, Hubli</cite></div>
+      <div class="pt-card"><div class="qm">&ldquo;</div><blockquote data-en="We found the results accurate and comparable to commercial 12 lead ECG devices. The AI interpretations are quick and precise, a viable solution for clinics, ambulances and health camps." data-hi="नतीजे सटीक और व्यावसायिक 12 लीड ईसीजी डिवाइस के बराबर मिले। एआई इंटरप्रिटेशन तेज़ और सटीक है, क्लीनिक, एम्बुलेंस और हेल्थ कैंप के लिए उपयुक्त समाधान।">We found the results accurate and comparable to commercial 12 lead ECG devices. The AI interpretations are quick and precise, a viable solution for clinics, ambulances and health camps.</blockquote><cite data-en="Dr Dina Shah, MD, Head of Emergency, Fortis Hospital, Noida" data-hi="डॉ. दीना शाह, एमडी, इमरजेंसी प्रमुख, फोर्टिस अस्पताल, नोएडा">Dr Dina Shah, MD, Head of Emergency, Fortis Hospital, Noida</cite></div>
     </div>
   </div>
 </section>

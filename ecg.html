@@ -70,9 +70,11 @@
   .cert{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);text-align:center}
   .cert b{display:block;font-family:'Fraunces',serif;font-size:1.25rem;color:var(--blue-dark);margin-bottom:6px}.cert h3{font-size:1rem;margin-bottom:6px}.cert p{font-size:.86rem}
   .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}@media(max-width:860px){.testi-grid{grid-template-columns:1fr}}
-  .testi{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
-  .testi blockquote{font-size:.97rem;color:var(--ink);font-style:italic;margin-bottom:14px}.testi cite{font-style:normal;font-weight:700;color:var(--charcoal);font-size:.92rem}
-  .testi .ph{aspect-ratio:4/3;margin-bottom:16px}
+  .testi{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;box-shadow:var(--shadow);text-align:left;position:relative}
+  .testi .quote-mark{font-family:'Fraunces',serif;font-size:3.2rem;line-height:.6;color:var(--blue);opacity:.3;margin-bottom:10px}
+  .testi blockquote{font-size:1rem;color:var(--ink);margin-bottom:18px;line-height:1.6}
+  .testi cite{font-style:normal;font-weight:800;color:var(--charcoal);font-size:.95rem;display:block}
+  .testi cite span{display:block;font-weight:600;color:var(--muted);font-size:.85rem;margin-top:2px}
   .band img{width:100%;display:block}
   .band-cap{background:var(--charcoal);color:#fff;text-align:center;padding:16px 20px;font-size:1.05rem;font-family:'Fraunces',serif}
   .reach{background:var(--bg-alt)}
@@ -253,18 +255,11 @@
   <span class="label">What doctors say</span>
   <h2>Trusted where it is already running.</h2>
   <div class="testi-grid">
-    <div class="testi"><blockquote>"We found Cardiotrack accurate and comparable to commercial 12 lead ECG devices. AI interpretations are quick and precise. A viable solution for periphery clinics, ambulances and health camps."</blockquote><cite>Dr Dina Shah, Head of Emergency, Fortis Hospital, Noida</cite></div>
-    <div class="testi"><blockquote>"Cardiotrack brings cardiologist grade ECG to my clinic. My patients get a signed report the same day. Earlier they travelled 40 km for this."</blockquote><cite>Dr Chandrashekhar, Hubli</cite></div>
-    <div class="testi"><blockquote>"The ECG machine provided by Cardiotrack is very useful in general practice for quick diagnosis. It is easy to operate and read."</blockquote><cite>Dr Rajeev H</cite></div>
+    <div class="testi"><div class="quote-mark">&ldquo;</div><blockquote>We found the results accurate and comparable to commercial 12 lead ECG devices. The AI interpretations are quick and precise, a viable solution for clinics, ambulances and health camps.</blockquote><cite>Dr Dina Shah, MD<span>Head of Emergency, Fortis Hospital, Noida</span></cite></div>
+    <div class="testi"><div class="quote-mark">&ldquo;</div><blockquote>The results are accurate and comparable to commercially available clinical 12 lead ECG machines. The portability and ease of use are attractive for physicians, cardiologists and diagnostic labs.</blockquote><cite>Dr Rajeev H<span>Consultant Physician, Arogya Dhama, Bengaluru</span></cite></div>
+    <div class="testi"><div class="quote-mark">&ldquo;</div><blockquote>A handheld, cost effective ECG is exactly what Indian primary care needs. I validated its accuracy over two years and recommend it for ambulatory care.</blockquote><cite>Dr K. N. Maruthy<span>Professor of Physiology, Narayana Medical College, Nellore</span></cite></div>
   </div>
-  <div class="letters">
-    <figure><img src="letter_fortis.jpg" alt="Fortis Hospital recommendation letter"><figcaption>Fortis Hospital</figcaption></figure>
-    <figure><img src="letter_karnataka.jpg" alt="Government of Karnataka recommendation"><figcaption>Govt. of Karnataka</figcaption></figure>
-    <figure><img src="letter_rajeev.jpg" alt="Dr Rajeev H recommendation letter"><figcaption>Dr Rajeev H</figcaption></figure>
-    <figure><img src="letter_maruthy.jpg" alt="Dr Maruthy recommendation letter"><figcaption>Dr Maruthy</figcaption></figure>
-    <figure><img src="letter_chandrashekhar.jpg" alt="Dr Chandrashekhar recommendation letter"><figcaption>Dr Chandrashekhar</figcaption></figure>
-  </div>
-  <p class="letters-cap">Signed recommendations from Fortis Hospital, the Government of Karnataka and practising physicians.</p>
+  <p class="letters-cap">Backed by signed recommendations from Fortis Hospital, the Government of Karnataka and practising physicians across India.</p>
 </div></section>
 
 <!-- BUYING QUESTIONS -->
